@@ -1,0 +1,102 @@
+[
+   {
+      "validator_name": "Simply Staking",
+      "validator_address": "bitsongvaloper129y6g55wz7mz9vs2nudfvfdaun80fuphnltfpf",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepq6259r3w0u8aagdu85ywvxx32s8qderjuk2ephkwg6nactjk2kals2ahxsc"
+   },
+   {
+      "validator_name": "Forbole",
+      "validator_address": "bitsongvaloper125hdkukw4pu2urhj4nv366q0avdqv24twga2kd",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepqkkqch4qaz9k8zlzr84k5mfw7yxaq6g87sy9jcy4w6sm38vrqqmts35sgrp"
+   },
+   {
+      "validator_name": "KalpaTech",
+      "validator_address": "bitsongvaloper19ah9302mh80pvv5zeztdr6qcqk6z52frn6rjj5",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepqj2cujy5pe9qxeg8xd929jff62eyhfyqgu9hx5f32pxxwn87wq2gq6dp5pe"
+   },
+   {
+      "validator_name": "ITA Stakers",
+      "validator_address": "bitsongvaloper1fkj2cn209yeexxyets98evrcmmds23hck0lyzq",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepqwf9sp8cuazyrs43mrwjzjfqdxe4r7svn82ekzcey9z86nzmczjhsxtmwvm"
+   },
+   {
+      "validator_name": "dimi",
+      "validator_address": "bitsongvaloper1dmmupr5qqy07sksct3au8tx9vuh224vg53fl6x",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepqkzalg2936rxw6v5dx3y7n2jvl929ws2knqvml6s5lw4gyyqjhxsq3hp5z7"
+   },
+   {
+      "validator_name": "Bi23",
+      "validator_address": "bitsongvaloper17343qmv2gpe79t5f87gqg3m6vzfz33z9ssh5x0",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepqrcfet50pk4caf6r299jjfx07wcygwujh7j4akzywwlyjzsvjmqlq6lpvgu"
+   },
+   {
+      "validator_name": "Rundax",
+      "validator_address": "bitsongvaloper1wtf99e8l5k2yxxc0rj6xwxj7mfam9hfnjqznja",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepqg9lz2nr5uhypm8g777waar29cj2ujj849a3frv07cckqa67d8fasmeevp9"
+   },
+   {
+      "validator_name": "StakeLab",
+      "validator_address": "bitsongvaloper18wf0w252jxk3kgl5vlst8ttat8xzfnvejuftk2",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepq322jg9kha5y04cmpdu03k4llswhwjnq3dvdcn3jukz75yt9d7sjqe69q8s"
+   },
+   {
+      "validator_name": "stake.systems",
+      "validator_address": "bitsongvaloper16wgum78qxca2vrk3s45lu0cc52pj82hjs3h04z",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepq8e2ymetjwqhxeavq9e29tddaxkm7c7s3em0d409hlplz9syjysaqnaz7gz"
+   },
+   {
+      "validator_name": "Staky.io",
+      "validator_address": "bitsongvaloper1jsaud5d8weze74a5e5w9ercxamtglg9wapc43m",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepqzsa56jzl93szvd8rtc80lv3ajzmjk7ms26xq382k2l0t4ghkh85qqnr7al"
+   },
+   {
+      "validator_name": "Divecrypto",
+      "validator_address": "bitsongvaloper1l4g6s4hstt6qfmakrthcjjqt47l2hgv3202ckl",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepq3q7kfluzr5z38m4p9gla5enk3xarazfkafn48q44v5kv0g7z6d5satqk02"
+   },
+   {
+      "validator_name": "Masternode24.de",
+      "validator_address": "bitsongvaloper18nqd69k3kgns9tyvq8e8supsvx9wgwwu60c9np",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepq85evnrwaxj3m29lpdhkmehls05pce4duufldrsf8ym5crfxz55asnqf7er"
+   },
+   {
+      "validator_name": "Ubik Capital",
+      "validator_address": "bitsongvaloper12a627cpjyez9ne06nttzqrgt067znnhqqlguv0",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepqta7gkjngl35cqfc68vqas0yl26rza8a87zpktaswgj4thr3jyv3s0kev3m"
+   },
+   {
+      "validator_name": "Bit Cat🐱",
+      "validator_address": "bitsongvaloper1zuc0kljzv5mutgk0ddufp4vgvpy04dhz07dlxp",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepqv9frh725szvehtuepyzruf0l95vqmlk4j5l42ges6qtjxh6qgkdsk8dwcx"
+   },
+   {
+      "validator_name": "ANAMIX",
+      "validator_address": "bitsongvaloper1y3sz27dfqh3fa5q305sx9s5lje07efr0cz2q2u",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepql5cqd9nc6gm8jjej44q757hlhhz4hmszugr76fdq2u25ackea3tqwz7pes"
+   },
+   {
+      "validator_name": "kytzu",
+      "validator_address": "bitsongvaloper1xe4et8cypskz6xggqa0ahgsnpqg7ac8dt52mgy",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepq2zf9su6akzfp7hy53w3us707v547fcwjgwkmysj0d78hvhm7kufqape6rq"
+   },
+   {
+      "validator_name": "Validator.Center",
+      "validator_address": "bitsongvaloper1aa4z7tyml6tcw5arckfx3xqszcedn4gu8su8gz",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepqjwx3cs2mqnmwk30wr5e69pfz8ff2w55t3x8wf5t528ap7ru7dmastazzzx"
+   },
+   {
+      "validator_name": "staking.blue 🚀",
+      "validator_address": "bitsongvaloper1mceksy7l3xenuyx4dzl64erf3fh29a3r2ercnz",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepqu6355aqr90acy777p6ydj20rvc7tufnrnac4zep250zvstknavssj2f8mm"
+   },
+   {
+      "validator_name": "novy",
+      "validator_address": "bitsongvaloper1rgtyd3uj3m0rr684hy3590y3vjcm9enhamsm6r",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepq0urlwwwpntu2trxfhptyg2fw34r4p7enzuv42p3n4ra4ptn6kqcspy9ghj"
+   },
+   {
+      "validator_name": "jetlife",
+      "validator_address": "bitsongvaloper1sr97dlwwc3420dyxg50cldm4yqxtl7x2y4tzy2",
+      "testnet_consensus_public_key": "bitsongvalconspub1zcjduepq8hl54hezccc5t647fq2xwauqvhztl69gnqw5x35aem0wgth7qmnq63430m"
+   }
+]
