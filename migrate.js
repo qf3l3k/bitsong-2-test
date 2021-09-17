@@ -138,7 +138,7 @@ slashing.signing_infos = [{
 slashing.missed_blocks = []
 
 // Governance
-// genesis.app_state.gov.voting_params.voting_period = "900s"
+genesis.app_state.gov.voting_params.voting_period = "900s"
 
 console.log(`Staking Validators: ${genesis.app_state.staking.validators.length}`)
 console.log(`TM Validators: ${genesis.validators.length}`)
