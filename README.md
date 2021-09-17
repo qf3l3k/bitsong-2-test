@@ -114,3 +114,30 @@ cosmovisor version
 ```
 cosmovisor start --x-crisis-skip-assert-invariants --pruning=nothing
 ```
+
+### Optional: Background service
+
+This will allow the node to run in the background and restart automatically.
+
+```
+sudo tee /etc/systemd/system/bitsongd.service > /dev/null <<EOF
+[Unit]
+Description=BitSong Daemon
+After=network-online.target
+
+[Service]
+User=root
+ExecStart=/root/go/bin/cosmovisor start --x-crisis-skip-assert-invariants --pruning=nothing
+Restart=always
+RestartSec=3
+LimitNOFILE=4096
+
+Environment="DAEMON_HOME=/root/.bitsongd"
+Environment="DAEMON_NAME=bitsongd"
+Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
+Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
