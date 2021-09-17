@@ -10,7 +10,7 @@
 
 ```
 apt update && apt upgrade -y
-apt install build-essential git -y
+apt install build-essential git jq -y
 ```
 
 ## Download and install go
@@ -67,8 +67,50 @@ wget https://github.com/bitsongofficial/bitsong-2-test/raw/main/genesis.test.jso
 sed -i 's#persistent_peers = ""#persistent_peers = "795f1c85e983f70d7e4834be37828f9ba036cfdf@94.130.111.95:26656"#g' ~/.bitsongd/config/config.toml
 ```
 
+### Setup Cosmovisor
+
+In order to do automatic on-chain upgrades we will be using cosmovisor. Read more here: https://docs.cosmos.network/master/run-node/cosmovisor.html
+
+```
+# download the cosmovisor binary
+go get github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor
+
+# check the version
+cosmovisor version
+
+# (it should print DAEMON_NAME is not set)
+```
+
+Setup env
+
+```
+echo "# Setup Cosmovisor" >> ~/.profile
+echo "export DAEMON_NAME=bitsongd" >> ~/.profile
+echo "export DAEMON_HOME=$HOME/.bitsongdd" >> ~/.profile
+```
+
+```
+source ~/.profile
+
+# verify by running the following
+echo $DAEMON_NAME
+```
+
+Copy files
+
+```
+mkdir -p ~/.bitsongd/cosmovisor/upgrades
+mkdir -p ~/.bitsongd/cosmovisor/genesis/bin/
+cp $(which bitsongd) ~/.bitsongd/cosmovisor/genesis/bin/
+```
+
+```
+cosmovisor version
+# 0.8.0-dev-12-g37da72f
+```
+
 ### Start
 
 ```
-bitsongd start --x-crisis-skip-assert-invariants --pruning=nothing
+cosmovisor start --x-crisis-skip-assert-invariants --pruning=nothing
 ```
