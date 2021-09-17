@@ -73,7 +73,7 @@ In order to do automatic on-chain upgrades we will be using cosmovisor. Read mor
 
 ```
 # download the cosmovisor binary
-go get github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor
+cd ~ && go get github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor
 
 # check the version
 cosmovisor version
@@ -86,7 +86,7 @@ Setup env
 ```
 echo "# Setup Cosmovisor" >> ~/.profile
 echo "export DAEMON_NAME=bitsongd" >> ~/.profile
-echo "export DAEMON_HOME=$HOME/.bitsongdd" >> ~/.profile
+echo "export DAEMON_HOME=$HOME/.bitsongd" >> ~/.profile
 ```
 
 ```
@@ -140,4 +140,16 @@ Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
 [Install]
 WantedBy=multi-user.target
 EOF
+```
+
+Enable and start it
+
+```
+systemctl enable bitsongd && systemctl start bitsongd
+```
+
+See logs
+
+```
+journalctl -u bitsongd -f
 ```
