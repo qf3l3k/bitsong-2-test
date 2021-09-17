@@ -153,3 +153,29 @@ See logs
 ```
 journalctl -u bitsongd -f
 ```
+
+## Launch your validator
+
+1. import your mainnet (`bitsong-1`) key
+
+```
+bitsongd keys add <key-name> --recover
+```
+
+2. create and send `create-validator` tx
+
+```
+bitsongd tx staking create-validator \
+--amount=10000000ubtsg \
+--pubkey=$(bitsongd tendermint show-validator) \
+--moniker=<your-moniker> \
+--chain-id=bitsong-2-test \
+--commission-rate="0.1" \
+--commission-max-rate="1.00" \
+--commission-max-change-rate="1.00" \
+--min-self-delegation="1" \
+--gas="auto" \
+--gas-adjustment="1.2" \
+--gas-prices="0.025ubtsg" \
+--from=<key-name>
+```
