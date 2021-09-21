@@ -39,13 +39,13 @@ git checkout v0.42.x
 
 make install
 
-bitsongd version # 0.8.0-dev-13-g52d3e39
+bitsongd version # 0.8.0-dev-14-g3c6cbbb
 ```
 
 ## Init and start `go-bitsong`
 
 ```
-bitsongd init <moniker> --chain-id=bitsong-2-devnet-1
+bitsongd init <moniker> --chain-id=bitsong-2-devnet-2
 ```
 
 ### Optional
@@ -68,7 +68,7 @@ wget https://github.com/bitsongofficial/bitsong-2-test/raw/main/genesis.test.jso
 jq -S -c -M '' ~/.bitsongd/config/genesis.json | shasum -a 256
 ```
 
-result `a075aefc216a5a51b232451e0fffec284eb1dcd4e4544a33c0b8a96b31eb78de  -`
+result `aa676fa1241a0c8306bd84d863fd88baab544e3556354596681ca23efb4094a6  -`
 
 ### Add peers
 
@@ -115,7 +115,7 @@ cp $(which bitsongd) ~/.bitsongd/cosmovisor/genesis/bin/
 
 ```
 cosmovisor version
-# 0.8.0-dev-13-g52d3e39
+# 0.8.0-dev-14-g3c6cbbb
 ```
 
 ### Start
@@ -178,7 +178,7 @@ bitsongd tx staking create-validator \
 --amount=10000000ubtsg \
 --pubkey=$(bitsongd tendermint show-validator) \
 --moniker=<your-moniker> \
---chain-id=bitsong-2-devnet-1 \
+--chain-id=bitsong-2-devnet-2 \
 --commission-rate="0.1" \
 --commission-max-rate="1.00" \
 --commission-max-change-rate="1.00" \
