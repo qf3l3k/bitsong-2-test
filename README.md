@@ -1,7 +1,7 @@
 ## BitSong 1 to 2 genesis modifier to a single validator
 
 1. `bitsong-1-export.json` - Have been exported by using the command `bitsongd export --height 2482860 --for-zero-height > bitsong-1-export.json`
-2. `bitsong-1-migrated.json` - Have been made by using the new `go-bitsong v0.42.x`, by using the command `bitsongd migrate bitsong-1-export.json --chain-id=bitsong-2-test --log_level info > bitsong-1-migrated.json`
+2. `bitsong-1-migrated.json` - Have been made by using the new `go-bitsong v0.42.x`, by using the command `bitsongd migrate bitsong-1-export.json --chain-id=bitsong-2-devnet-1 --log_level info > bitsong-1-migrated.json`
 3. `genesis.test.json` - The genesis that we are using in out test, have been made by using the script `node migrate.js`
 
 # Install and test
@@ -17,7 +17,8 @@ apt install build-essential git jq -y
 
 ```
 wget https://dl.google.com/go/go1.16.8.linux-amd64.tar.gz
-tar -xvzf go1.16.8.linux-amd64.tar.gz
+sudo tar -xvzf go1.16.8.linux-amd64.tar.gz
+sudo mv go /usr/local
 
 cat <<EOF >> ~/.profile
 export GOPATH=$HOME/go
@@ -44,7 +45,7 @@ bitsongd version # 0.8.0-dev-12-g37da72f
 ## Init and start `go-bitsong`
 
 ```
-bitsongd init <moniker> --chain-id=bitsong-2-test
+bitsongd init <moniker> --chain-id=bitsong-2-devnet-1
 ```
 
 ### Optional
@@ -169,7 +170,7 @@ bitsongd tx staking create-validator \
 --amount=10000000ubtsg \
 --pubkey=$(bitsongd tendermint show-validator) \
 --moniker=<your-moniker> \
---chain-id=bitsong-2-test \
+--chain-id=bitsong-2-devnet-1 \
 --commission-rate="0.1" \
 --commission-max-rate="1.00" \
 --commission-max-change-rate="1.00" \
