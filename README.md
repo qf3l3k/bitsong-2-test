@@ -62,6 +62,14 @@ sed -i 's/swagger = false/swagger = true/g' ~/.bitsongd/config/app.toml
 wget https://github.com/bitsongofficial/bitsong-2-test/raw/main/genesis.test.json -O ~/.bitsongd/config/genesis.json
 ```
 
+### Genesis checksum
+
+```
+jq -S -c -M '' ~/.bitsongd/config/genesis.json | shasum -a 256
+```
+
+result `a075aefc216a5a51b232451e0fffec284eb1dcd4e4544a33c0b8a96b31eb78de  -`
+
 ### Add peers
 
 ```
