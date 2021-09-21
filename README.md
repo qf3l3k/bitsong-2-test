@@ -39,7 +39,7 @@ git checkout v0.42.x
 
 make install
 
-bitsongd version # 0.8.0-dev-12-g37da72f
+bitsongd version # 0.8.0-dev-13-g52d3e39
 ```
 
 ## Init and start `go-bitsong`
@@ -115,7 +115,7 @@ cp $(which bitsongd) ~/.bitsongd/cosmovisor/genesis/bin/
 
 ```
 cosmovisor version
-# 0.8.0-dev-12-g37da72f
+# 0.8.0-dev-13-g52d3e39
 ```
 
 ### Start
