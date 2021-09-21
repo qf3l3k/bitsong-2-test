@@ -140,6 +140,10 @@ slashing.missed_blocks = []
 // Governance
 genesis.app_state.gov.voting_params.voting_period = "900s"
 
+// Enable ibc transfers
+genesis.app_state.transfer.params.receive_enabled = true
+genesis.app_state.transfer.params.send_enabled = true
+
 console.log(`Staking Validators: ${genesis.app_state.staking.validators.length}`)
 console.log(`TM Validators: ${genesis.validators.length}`)
 
