@@ -214,7 +214,7 @@ grpc_addr = 'http://127.0.0.1:9110'
 websocket_addr = 'ws://localhost:26677/websocket'
 rpc_timeout = '10s'
 account_prefix = 'bitsong'
-key_name = 'relay-btsg'
+key_name = 'relay-bitsong'
 store_prefix = 'ibc'
 max_gas = 2000000
 gas_price = { price = 0.001, denom = 'ubtsg' }
